@@ -10,7 +10,7 @@ env:
   COVERAGE: true
 
 jobs:
-  test:
+  coverage:
 
     runs-on: ubuntu-latest
 
