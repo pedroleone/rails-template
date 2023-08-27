@@ -1,6 +1,13 @@
 # frozen_string_literal: true
 
 ENV['RAILS_ENV'] ||= 'test'
+require 'simplecov'
+require 'simplecov-console'
+
+SimpleCov.minimum_coverage 80
+SimpleCov.start 'rails' if ENV['COVERAGE'].present?
+SimpleCov.formatter = SimpleCov::Formatter::Console
+
 require_relative '../config/environment'
 require 'rails/test_help'
 
