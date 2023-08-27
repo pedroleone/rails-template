@@ -38,6 +38,4 @@ jobs:
       - name: Run migrations
         run: bin/rails db:migrate
       - name: Run tests
-        run: bundle exec rake
-      - name: Set output
-        run: echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
+        run: bundle exec rake >> $GITHUB_STEP_SUMMARY
