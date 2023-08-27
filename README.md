@@ -1,4 +1,4 @@
-![Tests](https://github.com/github/pedroleone/rails-template/workflows/ci.yml/badge.svg)
+![Tests](https://github.com/github/pedroleone/rails-template/workflows/ci.yml/badge.svg?event=push)
 
 # README
 
