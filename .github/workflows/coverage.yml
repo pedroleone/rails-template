@@ -40,4 +40,4 @@ jobs:
       - name: Run tests
         run: bundle exec rake
       - name: Set output
-        run: echo "EITA PORRA!" >> $GITHUB_OUTPUT
+        run: echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
