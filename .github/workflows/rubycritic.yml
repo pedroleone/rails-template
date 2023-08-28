@@ -18,5 +18,5 @@ jobs:
           bundler-cache: true
       - name: Install dependencies
         run: bundle install
-      - name: Rubocop
+      - name: Rubycritic
         run: bundle exec rubycritic app -f console -s 90.0

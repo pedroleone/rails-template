@@ -35,5 +35,5 @@ jobs:
         run: bin/rails db:create
       - name: Run migrations
         run: bin/rails db:migrate
-      - name: Run tests
+      - name: Run tests with Simplecov enabled
         run: bundle exec rake >> $GITHUB_STEP_SUMMARY
