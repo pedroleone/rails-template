@@ -1,0 +1,22 @@
+name: Brakeman
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  security:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2.2'
+          bundler-cache: true
+      - name: Install dependencies
+        run: bundle install
+      - name: Brakeman
+        run: bundle exec brakeman --no-pager
