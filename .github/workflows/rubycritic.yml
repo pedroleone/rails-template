@@ -1,0 +1,22 @@
+name: Rubycritic
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  quality:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2.2'
+          bundler-cache: true
+      - name: Install dependencies
+        run: bundle install
+      - name: Rubocop
+        run: bundle exec rubycritic app -f console -s 90.0
