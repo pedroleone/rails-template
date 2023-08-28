@@ -5,7 +5,7 @@ require 'simplecov'
 require 'simplecov-console'
 
 SimpleCov.minimum_coverage 80
-SimpleCov.start 'rails' if ENV['COVERAGE'].present?
+SimpleCov.start 'rails'
 SimpleCov.formatter = SimpleCov::Formatter::Console
 
 require_relative '../config/environment'
