@@ -87,4 +87,4 @@ group :test do
   gem 'simplecov-console', require: false
 end
 
-gem "tailwindcss-rails", "~> 2.0"
+gem 'tailwindcss-rails', '~> 2.0'
